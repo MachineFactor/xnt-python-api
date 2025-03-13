@@ -4,12 +4,12 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 metadata = dict()
-with open(convert_path('src/xnt/version.py')) as metadata_file:
-    exec(metadata_file.read(), metadata)
+#with open(convert_path('src/xnt/version.py')) as metadata_file:
+#    exec(metadata_file.read(), metadata)
 
 setup(
     name='xnt-http-api',
-    version=metadata['__version__'],
+    version='1.0',
     zip_safe=False,
 
     description='Libraries to work with external XNT HTTP API',
